@@ -19,1175 +19,1175 @@ body {
 }
 
 
-        /*--- Header ---*/
+    /*--- Header ---*/
+        
+    input {
+        display: none;
+    }
+
+    label {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        height: 60px;
+        background: yellow;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding: 15px 20px;
             
-        input {
-            display: none;
-        }
-
-        label {
-            display: none;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-            width: 100%;
-            height: 60px;
-            background: yellow;
-        }
-
-        h1 {
-            font-size: 30px;
-            padding: 15px 20px;
-                
-        }
-
-        .menu {
-            position: relative;
-            height:auto;
-            top: 0px;
-            transition: none;    
-        }
-
-        .menu ul {
-            display: flex;
-            margin: 0;
-            padding-right: 10px;
-        }
-
-        .menu li {
-            display: flex;
-            width: 30%;
-            font-size: 25px;
-            justify-content: center;
-            margin-left: 0;
-            padding-left: 10px;
-            margin-top: 15px;
-        }
-
-        .menu a {
-            text-decoration:none;
-            color: black;   
-        }
-
-        .portada img {
-            width:100%;
-            height:cover;
-        }
-
-
-
-        /*--- Historia ---*/
-
-
-        .main {
-            color: black;
-            width: 100%;
-            margin: auto;
-            margin-top: 70px;
-            
-        }
-
-        .main .bio {
-            padding: 30px 150px;
-        }
-
-        .historia {
-
-            text-align: center;
-            font-size: 40px;
-            
-        }
-
-        .bio {
-            margin-top: 15px;
-            font-size: 20px;
-            text-align: justify;
-            width: 100%;
-            margin-top: 15px;
-            padding: 10px 50px;
-        }
-
-        /*--Integrantes--*/
-
-        .integrantes {
-            display: grid;
-            grid-template-columns: repeat(2, 300px);
-            grid-template-rows: 60px repeat (2, 270px) repeat(2, 130px);
-            grid-template-areas: "titulo titulo"
-                                "foto1 foto2"
-                                "tyler josh";
-            grid-column-gap: 60px;
-            margin: auto;
-            margin-top: 50px;
-            margin-bottom: 100px;
-            height: 500px;
-            justify-content: center;
-        }
-
-        .integrantes p {
-            font-size: 20px;
-        }
-
-
-        .titulo {
-            grid-area: titulo;
-            text-align:center;
-            font-size: 40px;
-            
-        }
-
-        .foto1 {
-            grid-area: foto1;
-            vertical-align: middle;
-            width: 80%;
-            height: 230px;
-            border-radius: 20%;
-            border-color: black;
-            margin: 10px 30px;
-        }
-
-        .foto2 {
-            grid-area: foto2;
-            vertical-align: middle;
-            width: 80%;
-            height: 230px;
-            border-radius: 20%;
-            border-color: black;
-            margin: 10px 30px;
-        }
-
-        .tyler {
-            grid-area: tyler;
-            text-align: center;
-            
-        }
-
-        .josh {
-            grid-area: josh;
-            text-align: center;
-            
-        }
-
-
-        /*--- Fotos ---*/    
-
-        .fotos {
-            display: grid;
-            grid-template-columns: repeat(3, 28%);
-            grid-template-rows: 60px repeat(2, 270px) 550px;
-            grid-template-areas:"titulo titulo titulo"
-                                "foto1 foto2 foto3"
-                                "foto4 foto5 foto6"
-                                "video video video";
-            row-gap: 10px;
-            column-gap: 5px;
-            justify-content: center;
-            margin-top: 20px;
-            width: 100%;    
-            
-        }
-
-        .imagenes {
-            grid-area: titulo;
-            color: black;
-            text-align: center;
-            font-size: 40px;
-        }
-
-        .foto3 {
-            grid-area: foto1;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;
-            
-        }
-
-        .foto4 {
-            grid-area: foto2;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;   
-        }
-
-        .foto5 {
-            grid-area: foto3;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;    
-        }
-
-        .foto6 {
-            grid-area: foto4;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;    
-        }
-
-        .foto7 {
-            grid-area: foto5;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;
-        }
-            
-        .foto8 {
-            grid-area: foto6;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;
-        }
-
-
-        #animacionfoto {
-            transition: transform 0.5s, box-shadow: 05.s, filter 0.5s;
-        }
-
-        #animacionfoto:hover {
-
-            transform: scale(1.2);
-            box-shadow: 2px 1px 5px black;
-        }
-
-        .video {
-            grid-area: video;
-            vertical-align: middle;
-            width: 100%;
-            height: 100%;   
-        }
-
-
-        /*--- Discografia ---*/
-
-        .discografia .discos {
-            display: grid;
-            grid-template-columns: repeat(5, 19%);
-            grid-template-rows: 300px;
-            grid-template-areas: "disco1 disco2 disco3 disco4 disco5";
-            width: 90%;
-            margin: 70px 0;
-            margin: auto;
-            justify-content: center;
-        }
-
-        .cd {
-            color: yellow;
-            margin: 50px 0;
-            text-align: center;
-            font-size: 40px;
-        }
-
-        .animaciondisco {
-            transition: transform 0.5s, box-shadow: 05.s, filter 0.5s;
-        }
-
-
-        .discografia img {
-            width: 90%;
-            margin: 0 10px;
-        }
-
-        .animaciondisco:hover {
-            transform: scale(1.1);
-            box-shadow: 2px 1px 5px black;
-        }
-
-        h3 {
-            text-align: center;
-            margin: 10px;
-            font-size: 23px;  
-        }
-
-        .discografia h3 {
-            color: yellow;
-        }
-
-
-        /*--- Shows ---*/
-
-        .shows {
-            color: yellow;
-            display: grid;
-            grid-template-columns: repeat(2, 350px);
-            grid-template-rows: 40px 600px;
-            grid-template-areas: "titulo titulo"
-                                "fecha lugar";
-            justify-content: center;
-            margin: auto;
-            margin: 50px 0;
-            
-        }
-
-        .tituloshows {
-            grid-area: titulo;
-            text-align: center;
-            font-size: 40px;
-        }
-
-        .fecha {
-            grid-area: fecha;
-            margin-top: 30px;
-            font-size:30px;
-        }
-
-        .shows .fecha li {
-            margin: 23px 0px;
-            padding-left: 20px;
-        }
-        .lugar {
-            grid-area: lugar;
-            margin-top: 30px;
-            font-size:30px;
-        }
-
-        .shows .lugar li {
-        margin: 23px 0;
-        }
-
-            
-        /*--Footer--*/
-
-        footer {
-            width: 100%;
-            height:80px;
-            background: yellow;
-        }
-
-        .contenedor {
-            width: 100%;
-            height:70px;
-            display: flex;
-            justify-content: space-between;
-            margin: 0;
-        }
-
-        .contenedor nav {
-            width: 100%;
-            margin: 10px;
-        }
-
-        .contenedor nav ul {
-            margin-right: 25px;
-        }
-
-        .contenedor nav ul li {
-            width: 2.8%;
-            display: inline-block;
-            font-size:0;
-            margin-right: 5px;
-            float: right;
-        }
-
-        h4 {
-            display: inline-block;
-            font-size: 25px;
-        }
-
-        .redes {
-            width: 90%;
-        }
-
-        .contenedor nav ul .cc {
-            width: 15px;
-        }
+    }
+
+    .menu {
+        position: relative;
+        height:auto;
+        top: 0px;
+        transition: none;    
+    }
+
+    .menu ul {
+        display: flex;
+        margin: 0;
+        padding-right: 10px;
+    }
+
+    .menu li {
+        display: flex;
+        width: 30%;
+        font-size: 25px;
+        justify-content: center;
+        margin-left: 0;
+        padding-left: 10px;
+        margin-top: 15px;
+    }
+
+    .menu a {
+        text-decoration:none;
+        color: black;   
+    }
+
+    .portada img {
+        width:100%;
+        height:cover;
+    }
+
+
+
+    /*--- Historia ---*/
+
+
+    .main {
+        color: black;
+        width: 100%;
+        margin: auto;
+        margin-top: 70px;
+        
+    }
+
+    .main .bio {
+        padding: 30px 150px;
+    }
+
+    .historia {
+
+        text-align: center;
+        font-size: 40px;
+        
+    }
+
+    .bio {
+        margin-top: 15px;
+        font-size: 20px;
+        text-align: justify;
+        width: 100%;
+        margin-top: 15px;
+        padding: 10px 50px;
+    }
+
+    /*--Integrantes--*/
+
+    .integrantes {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: 60px repeat (2, 270px) repeat(2, 130px);
+        grid-template-areas: "titulo titulo"
+                            "foto1 foto2"
+                            "tyler josh";
+        grid-column-gap: 60px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        height: 500px;
+        justify-content: center;
+    }
+
+    .integrantes p {
+        font-size: 20px;
+    }
+
+
+    .titulo {
+        grid-area: titulo;
+        text-align:center;
+        font-size: 40px;
+        
+    }
+
+    .foto1 {
+        grid-area: foto1;
+        vertical-align: middle;
+        width: 80%;
+        height: 230px;
+        border-radius: 20%;
+        border-color: black;
+        margin: 10px 30px;
+    }
+
+    .foto2 {
+        grid-area: foto2;
+        vertical-align: middle;
+        width: 80%;
+        height: 230px;
+        border-radius: 20%;
+        border-color: black;
+        margin: 10px 30px;
+    }
+
+    .tyler {
+        grid-area: tyler;
+        text-align: center;
+        
+    }
+
+    .josh {
+        grid-area: josh;
+        text-align: center;
+        
+    }
+
+
+    /*--- Fotos ---*/    
+
+    .fotos {
+        display: grid;
+        grid-template-columns: repeat(3, 28%);
+        grid-template-rows: 60px repeat(2, 270px) 550px;
+        grid-template-areas:"titulo titulo titulo"
+                            "foto1 foto2 foto3"
+                            "foto4 foto5 foto6"
+                            "video video video";
+        row-gap: 10px;
+        column-gap: 5px;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;    
+        
+    }
+
+    .imagenes {
+        grid-area: titulo;
+        color: black;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .foto3 {
+        grid-area: foto1;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;
+        
+    }
+
+    .foto4 {
+        grid-area: foto2;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;   
+    }
+
+    .foto5 {
+        grid-area: foto3;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;    
+    }
+
+    .foto6 {
+        grid-area: foto4;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;    
+    }
+
+    .foto7 {
+        grid-area: foto5;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;
+    }
+        
+    .foto8 {
+        grid-area: foto6;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;
+    }
+
+
+    #animacionfoto {
+        transition: transform 0.5s, box-shadow: 05.s, filter 0.5s;
+    }
+
+    #animacionfoto:hover {
+
+        transform: scale(1.2);
+        box-shadow: 2px 1px 5px black;
+    }
+
+    .video {
+        grid-area: video;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;   
+    }
+
+
+    /*--- Discografia ---*/
+
+    .discografia .discos {
+        display: grid;
+        grid-template-columns: repeat(5, 19%);
+        grid-template-rows: 300px;
+        grid-template-areas: "disco1 disco2 disco3 disco4 disco5";
+        width: 90%;
+        margin: 70px 0;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .cd {
+        color: yellow;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .animaciondisco {
+        transition: transform 0.5s, box-shadow: 05.s, filter 0.5s;
+    }
+
+
+    .discografia img {
+        width: 90%;
+        margin: 0 10px;
+    }
+
+    .animaciondisco:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 1px 5px black;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 10px;
+        font-size: 23px;  
+    }
+
+    .discografia h3 {
+        color: yellow;
+    }
+
+
+    /*--- Shows ---*/
+
+    .shows {
+        color: yellow;
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: 40px 600px;
+        grid-template-areas: "titulo titulo"
+                            "fecha lugar";
+        justify-content: center;
+        margin: auto;
+        margin: 50px 0;
+        
+    }
+
+    .tituloshows {
+        grid-area: titulo;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .fecha {
+        grid-area: fecha;
+        margin-top: 30px;
+        font-size:30px;
+    }
+
+    .shows .fecha li {
+        margin: 23px 0px;
+        padding-left: 20px;
+    }
+    .lugar {
+        grid-area: lugar;
+        margin-top: 30px;
+        font-size:30px;
+    }
+
+    .shows .lugar li {
+    margin: 23px 0;
+    }
+
+        
+    /*--Footer--*/
+
+    footer {
+        width: 100%;
+        height:80px;
+        background: yellow;
+    }
+
+    .contenedor {
+        width: 100%;
+        height:70px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .contenedor nav {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .contenedor nav ul {
+        margin-right: 25px;
+    }
+
+    .contenedor nav ul li {
+        width: 2.8%;
+        display: inline-block;
+        font-size:0;
+        margin-right: 5px;
+        float: right;
+    }
+
+    h4 {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .redes {
+        width: 90%;
+    }
+
+    .contenedor nav ul .cc {
+        width: 15px;
+    }
 
         
 @media only screen and (max-width: 768px) {
 
     Body {
         background: black;
-       }      
-    
-
-        /*--- Header ---*/
-
-        header {
-            width: 100%;
-            height: 60px;
-            background: yellow;
-            position: fixed;
-        }
-
-        h1 {
-            width: 100%;
-            display: inline-block; 
-            font-size: 30px;
-            text-align: center;
-            
-        }
-
-        header label {
-            width: 30px;
-            height: 30px;
-            position: fixed;
-            z-index: 10;
-            margin: 15px;
-            display: block;
-        }
-
-        header .icono {
-            width: 100%;
-            margin: auto;
-            display: block;
-        }
-
-        #check {
-        display: none;
-        }
-
-        #check:checked ~ .menu {
-            width: 300px;
-
-        }
-
-        .menu {
-
-            position: fixed;
-            top:60px;
-            width: 0px;
-            height: 100vh;
-            background:yellow;
-            cursor: pointer;
-            transition: all 500ms cubic-bezier(1,0,0,1);
-            overflow: hidden;
-            transition-timing-function: cubic-bezier(1,0,0,1);
-            color: black;
-        }
-
-        .menu ul {
-            display: block;
-
-        }
-
-        .menu li {
-            padding: 10px 30px;
-            transition: all 300ms;
-            display: block;
-            width: 300px;
-            font-size: 30px;
-            margin-top: 10px;
-        }
-
-        .menu a {
-            color: black;
-            text-decoration: none;
-        }
-
-        .menu li:hover {
-            background: rgba(0, 0, 0, 0.2)
-        }
+        }      
 
 
-        .portada img {
-            width:100%;
-            height:cover;
-            margin-top: 60px;
-        }
+    /*--- Header ---*/
 
-     /*-- historia --*/
-     
+    header {
+        width: 100%;
+        height: 60px;
+        background: yellow;
+        position: fixed;
+    }
+
+    h1 {
+        width: 100%;
+        display: inline-block; 
+        font-size: 30px;
+        text-align: center;
         
-        .main {
-            color: yellow;
-            width: 100%;
-            margin: auto;
-            margin-top: 70px;
-            
-            
-        }
+    }
 
-        .historia {
+    header label {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        z-index: 10;
+        margin: 15px;
+        display: block;
+    }
 
-            text-align: center;
-            font-size: 40px;
-            margin-bottom: 15px;
-            
-        }
+    header .icono {
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+    #check {
+    display: none;
+    }
+
+    #check:checked ~ .menu {
+        width: 300px;
+
+    }
+
+    .menu {
+
+        position: fixed;
+        top:60px;
+        width: 0px;
+        height: 100vh;
+        background:yellow;
+        cursor: pointer;
+        transition: all 500ms cubic-bezier(1,0,0,1);
+        overflow: hidden;
+        transition-timing-function: cubic-bezier(1,0,0,1);
+        color: black;
+    }
+
+    .menu ul {
+        display: block;
+
+    }
+
+    .menu li {
+        padding: 10px 30px;
+        transition: all 300ms;
+        display: block;
+        width: 300px;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .menu a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .menu li:hover {
+        background: rgba(0, 0, 0, 0.2)
+    }
+
+
+    .portada img {
+        width:100%;
+        height:cover;
+        margin-top: 60px;
+    }
+
+    /*-- historia --*/
     
-        .main .bio {
-            margin-top: 15px;
-            font-size: 20px;
-            text-align: center;
-            width: 70%;
-            padding: 0;
-            margin: auto;
-        }
+    
+    .main {
+        color: yellow;
+        width: 100%;
+        margin: auto;
+        margin-top: 70px;
+        
+        
+    }
+
+    .historia {
+
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 15px;
+        
+    }
+
+    .main .bio {
+        margin-top: 15px;
+        font-size: 20px;
+        text-align: center;
+        width: 70%;
+        padding: 0;
+        margin: auto;
+    }
 
 
-        /*--Integrantes--*/
+    /*--Integrantes--*/
 
 
-        .integrantes {
-            color: yellow;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 300px;
-            grid-template-rows: 60px 270px 130px 270px 130px;
-            grid-template-areas: "titulo"
-                                "foto1"
-                                "tyler"
-                                "foto2"
-                                "josh";
-            margin:auto;
-            margin-top: 50px;
-            margin-bottom: 250;
-            justify-content: center;
-            
-        }
+    .integrantes {
+        color: yellow;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 60px 270px 130px 270px 130px;
+        grid-template-areas: "titulo"
+                            "foto1"
+                            "tyler"
+                            "foto2"
+                            "josh";
+        margin:auto;
+        margin-top: 50px;
+        margin-bottom: 250;
+        justify-content: center;
+        
+    }
 
-        .titulo {
-            grid-area: titulo;
-            text-align:center;
-            font-size: 40px;
-            color: yellow;
-            
-        }
+    .titulo {
+        grid-area: titulo;
+        text-align:center;
+        font-size: 40px;
+        color: yellow;
+        
+    }
 
-        .foto1 {
-            grid-area: foto1;
-            vertical-align: middle;
-            width: 80%;
-            height: 230px;
-            border-radius: 20%;
-            border-color: black;
-            margin: 10px 30px;
-        }
+    .foto1 {
+        grid-area: foto1;
+        vertical-align: middle;
+        width: 80%;
+        height: 230px;
+        border-radius: 20%;
+        border-color: black;
+        margin: 10px 30px;
+    }
 
-        .foto2 {
-            grid-area: foto2;
-            vertical-align: middle;
-            width: 80%;
-            height: 230px;
-            border-radius: 20%;
-            border-color: black;
-            margin: 10px 30px;
-        }
+    .foto2 {
+        grid-area: foto2;
+        vertical-align: middle;
+        width: 80%;
+        height: 230px;
+        border-radius: 20%;
+        border-color: black;
+        margin: 10px 30px;
+    }
 
-        .tyler {
-            grid-area: tyler;
-            text-align: center;
-            color:yellow;
-            
-        }
+    .tyler {
+        grid-area: tyler;
+        text-align: center;
+        color:yellow;
+        
+    }
 
-        .josh {
-            grid-area: josh;
-            text-align: center;
-            color: yellow;
-            
-        }
-
-
-        /*--Fotos--*/
-
-        .fotos {
-            display: grid;
-            grid-template-columns: 390px;
-            grid-template-rows: 60px repeat(7, 300px);
-            grid-template-areas:"titulo"
-                                "foto1"
-                                "foto2"
-                                "foto3"
-                                "foto4"
-                                "foto5"
-                                "foto6"
-                                "video";
-            row-gap: 10px;
-            justify-content: center;
-            margin-top: 450px;
-            width: 100%;
-        }
-
-        .imagenes {
-            grid-area: titulo;
-            color: yellow;
-            text-align: center;
-            font-size: 40px;
-        }
-
-        .foto3 {
-            grid-area: foto1;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;  
-        }
-
-        .foto4 {
-            grid-area: foto2;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;    
-        }
-
-        .foto5 {
-            grid-area: foto3;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;   
-        }
-
-        .foto6 {
-            grid-area: foto4;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;   
-        }
-
-        .foto7 {
-            grid-area: foto5;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;
-        }
-
-        .foto8 {
-            grid-area: foto6;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;    
-        }
-
-        #animacionfoto {
-            transition: transform 0.5s, box-shadow: 05.s, filter 0.5s;
-        }
-
-        #animacionfoto:hover {
-
-            transform: scale(1.2);
-            box-shadow: 2px 1px 5px black;
-        }
-
-        .video {
-            grid-area: video;
-            vertical-align: middle;
-            width: 100%;
-            height: 100%;
-        }
+    .josh {
+        grid-area: josh;
+        text-align: center;
+        color: yellow;
+        
+    }
 
 
+    /*--Fotos--*/
 
-        /*--Discografia --*/
+    .fotos {
+        display: grid;
+        grid-template-columns: 390px;
+        grid-template-rows: 60px repeat(7, 300px);
+        grid-template-areas:"titulo"
+                            "foto1"
+                            "foto2"
+                            "foto3"
+                            "foto4"
+                            "foto5"
+                            "foto6"
+                            "video";
+        row-gap: 10px;
+        justify-content: center;
+        margin-top: 450px;
+        width: 100%;
+    }
 
+    .imagenes {
+        grid-area: titulo;
+        color: yellow;
+        text-align: center;
+        font-size: 40px;
+    }
 
-        .discografia {
-            width: 100%;
-        }
+    .foto3 {
+        grid-area: foto1;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;  
+    }
 
-        .discografia .discos {
-            display: grid;
-            grid-template-columns: 350px;
-            grid-template-rows: 40px repeat (5,250px);
-            grid-template-areas: "titulo"
-                                "discos";
-            grid-row-gap: 50px;
-            margin: auto;
-            margin-top: 50px;
-            justify-content: center;
-        }
+    .foto4 {
+        grid-area: foto2;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;    
+    }
 
+    .foto5 {
+        grid-area: foto3;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;   
+    }
 
-        .cd {
-            color: yellow;
-            margin-top: 50px;
-            text-align: center;
-            font-size: 40px;
-        }
+    .foto6 {
+        grid-area: foto4;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;   
+    }
 
-        .animaciondisco {
-            transition: transform 0.5s, box-shadow: 05.s, filter 0.5s;
-        }
+    .foto7 {
+        grid-area: foto5;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;
+    }
 
+    .foto8 {
+        grid-area: foto6;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;    
+    }
 
-        .discografia li {
-            margin: auto;
-            width: 90%;
-        }
+    #animacionfoto {
+        transition: transform 0.5s, box-shadow: 05.s, filter 0.5s;
+    }
 
-        .discografia .discos li .disco1 img {
-            margin: auto;
-            width: 80%;
-        }
+    #animacionfoto:hover {
 
-        .animaciondisco:hover {
-            transform: scale(1.1);
-            box-shadow: 2px 1px 5px black;
-        }
+        transform: scale(1.2);
+        box-shadow: 2px 1px 5px black;
+    }
 
-        .discografia h3 {
-
-            text-align: center;
-            font-size: 30px;
-            color: yellow;
-            font-size: 25px;  
-        }
-
-
-        /*--Show--*/
-
-        .shows {
-            color: yellow;
-            display: grid;
-            grid-template-columns: 160px 240px;
-            grid-template-rows: 40px 600px;
-            grid-template-areas: "titulo titulo"
-                                "fecha lugar";
-            justify-content: center;
-            width: 100%;
-            margin: auto;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-
-        .tituloshows {
-            grid-area: titulo;
-            text-align: center;
-            font-size: 40px;
-        }
-
-        .fecha {
-            grid-area: fecha;
-        }
-
-        .shows .fecha li {
-            margin: 23px 0px;
-            padding: 0 30px;
-            font-size: 20px;
-        }
-        .lugar {
-            grid-area: lugar;
-        }
-
-        .shows .lugar li {
-            margin: 23px 0;
-            font-size: 20px;
-        }
+    .video {
+        grid-area: video;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+    }
 
 
-        /*--- Footer ---*/
 
-        .contenedor {
-            background: yellow;
-            width: 100%;
-            height:60px;
-            display: flex;
-            justify-content: space-between;
-        }
+    /*--Discografia --*/
 
-        .contenedor nav {
 
-            width: 100%;
-        }
+    .discografia {
+        width: 100%;
+    }
 
-        .contenedor nav ul li {
-            width: 5%;
-            display: inline-block;
-            margin: 10px 10px;
-            float: right;
-        }
+    .discografia .discos {
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 40px repeat (5,250px);
+        grid-template-areas: "titulo"
+                            "discos";
+        grid-row-gap: 50px;
+        margin: auto;
+        margin-top: 50px;
+        justify-content: center;
+    }
 
-        h4 {
-            display: inline-block;
-            margin: 15px 0;
-            font-size: 20px;
-        }
 
-        .redes {
-            width: 100%;
-        }
+    .cd {
+        color: yellow;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 40px;
+    }
 
-        .contenedor nav ul .cc {
-        width: 10px;
-        margin-left: 10px;
-        }
+    .animaciondisco {
+        transition: transform 0.5s, box-shadow: 05.s, filter 0.5s;
+    }
+
+
+    .discografia li {
+        margin: auto;
+        width: 90%;
+    }
+
+    .discografia .discos li .disco1 img {
+        margin: auto;
+        width: 80%;
+    }
+
+    .animaciondisco:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 1px 5px black;
+    }
+
+    .discografia h3 {
+
+        text-align: center;
+        font-size: 30px;
+        color: yellow;
+        font-size: 25px;  
+    }
+
+
+    /*--Show--*/
+
+    .shows {
+        color: yellow;
+        display: grid;
+        grid-template-columns: 160px 240px;
+        grid-template-rows: 40px 600px;
+        grid-template-areas: "titulo titulo"
+                            "fecha lugar";
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .tituloshows {
+        grid-area: titulo;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .fecha {
+        grid-area: fecha;
+    }
+
+    .shows .fecha li {
+        margin: 23px 0px;
+        padding: 0 30px;
+        font-size: 20px;
+    }
+    .lugar {
+        grid-area: lugar;
+    }
+
+    .shows .lugar li {
+        margin: 23px 0;
+        font-size: 20px;
+    }
+
+
+    /*--- Footer ---*/
+
+    .contenedor {
+        background: yellow;
+        width: 100%;
+        height:60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedor nav {
+
+        width: 100%;
+    }
+
+    .contenedor nav ul li {
+        width: 5%;
+        display: inline-block;
+        margin: 10px 10px;
+        float: right;
+    }
+
+    h4 {
+        display: inline-block;
+        margin: 15px 0;
+        font-size: 20px;
+    }
+
+    .redes {
+        width: 100%;
+    }
+
+    .contenedor nav ul .cc {
+    width: 10px;
+    margin-left: 10px;
+    }
 
 }
 
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
 
         
-        /*--- Header ---*/
-        
-        header {
-            width: 100%;
-            height: 60px;
-            background: yellow;
-            position: fixed;
-        }
-        
-        h1 {
-            font-size: 30px;
-            text-align: center;
-            padding: 15px 0;
-        }
-        
-        .boxicono {
-            width: 30px;
-            height: 30px;
-            position: fixed;
-            z-index: 10;
-            margin: 15px;
-        }
-        
-        .icono {
-            width: 100%;
-            margin: auto;
-        }
-        
-        #check {
-        display: none;
-        }
-        
-        #check:checked ~ .menu {
-            width: 300px;
-        
-        }
-        
-        .menu {
-            position: fixed;
-            top:60px;
-            width: 0px;
-            height: 100vh;
-            background:yellow;
-            cursor: pointer;
-            transition: all 500ms cubic-bezier(1,0,0,1);
-            overflow: hidden;
-            transition-timing-function: cubic-bezier(1,0,0,1);
-            color: black;
-        }
-        
-        .menu li {
-            padding: 10px 30px;
-            transition: all 300ms;
-            display: block;
-            width: 300px;
-            font-size: 30px;
-            margin-top: 10px;
-        }
-        
-        .menu a {
-            color: black;
-            text-decoration: none;
-        }
-        
-        .menu li:hover {
-            background: rgba(0, 0, 0, 0.2)
-        }
-        
-        /*--Portada--*/
-        
-        .portada img {
-            width:100%;
-            height:cover;
-            margin: 60px 0;
-        }
-        
-        
-        /*-- Historia --*/
-        
-        
+    /*--- Header ---*/
+    
+    header {
+        width: 100%;
+        height: 60px;
+        background: yellow;
+        position: fixed;
+    }
+    
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        padding: 15px 0;
+    }
+    
+    .boxicono {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        z-index: 10;
+        margin: 15px;
+    }
+    
+    .icono {
+        width: 100%;
+        margin: auto;
+    }
+    
+    #check {
+    display: none;
+    }
+    
+    #check:checked ~ .menu {
+        width: 300px;
+    
+    }
+    
+    .menu {
+        position: fixed;
+        top:60px;
+        width: 0px;
+        height: 100vh;
+        background:yellow;
+        cursor: pointer;
+        transition: all 500ms cubic-bezier(1,0,0,1);
+        overflow: hidden;
+        transition-timing-function: cubic-bezier(1,0,0,1);
+        color: black;
+    }
+    
+    .menu li {
+        padding: 10px 30px;
+        transition: all 300ms;
+        display: block;
+        width: 300px;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    
+    .menu a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .menu li:hover {
+        background: rgba(0, 0, 0, 0.2)
+    }
+    
+    /*--Portada--*/
+    
+    .portada img {
+        width:100%;
+        height:cover;
+        margin: 60px 0;
+    }
+    
+    
+    /*-- Historia --*/
+    
+    
 
-        .main {
-            color: yellow;
-            width: 100%;
-            margin: auto;
-            
-        }
+    .main {
+        color: yellow;
+        width: 100%;
+        margin: auto;
+        
+    }
 
-        .historia {
+    .historia {
 
-            text-align: center;
-            font-size: 40px;
-        }
+        text-align: center;
+        font-size: 40px;
+    }
 
-        .bio {
-            margin-top: 15px;
-            text-align: center;
-            width: 100%;
-            padding: 10px 50px;
-        }
+    .bio {
+        margin-top: 15px;
+        text-align: center;
+        width: 100%;
+        padding: 10px 50px;
+    }
 
 
-        /*--Integrantes--*/
+    /*--Integrantes--*/
+    
+    
+    .integrantes {
+        color: yellow;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 60px 270px 130px 270px 130px;
+        grid-template-areas: "titulo"
+                            "foto1"
+                            "tyler"
+                            "foto2"
+                            "josh";
+        margin:auto;
+        margin-top: 50px;
+        margin-bottom: 420px;
+        justify-content: center;
         
+    }
+    
+    .titulo {
+        grid-area: titulo;
+        text-align:center;
+        font-size: 40px;
+        color: yellow;
         
-        .integrantes {
-            color: yellow;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 300px;
-            grid-template-rows: 60px 270px 130px 270px 130px;
-            grid-template-areas: "titulo"
-                                "foto1"
-                                "tyler"
-                                "foto2"
-                                "josh";
-            margin:auto;
-            margin-top: 50px;
-            margin-bottom: 420px;
-            justify-content: center;
-            
-        }
+    }
+    
+    .foto1 {
+        grid-area: foto1;
+        vertical-align: middle;
+        width: 80%;
+        height: 230px;
+        border-radius: 20%;
+        border-color: black;
+        margin: 10px 30px;
+    }
+    
+    .foto2 {
+        grid-area: foto2;
+        vertical-align: middle;
+        width: 80%;
+        height: 230px;
+        border-radius: 20%;
+        border-color: black;
+        margin: 10px 30px;
+    }
+    
+    .tyler {
+        grid-area: tyler;
+        text-align: center;
+        color: yellow;
         
-        .titulo {
-            grid-area: titulo;
-            text-align:center;
-            font-size: 40px;
-            color: yellow;
-            
-        }
+    }
+    
+    .josh {
+        grid-area: josh;
+        text-align: center;
+        color: yellow;
         
-        .foto1 {
-            grid-area: foto1;
-            vertical-align: middle;
-            width: 80%;
-            height: 230px;
-            border-radius: 20%;
-            border-color: black;
-            margin: 10px 30px;
-        }
+    }
+    
+    /*--Fotos--*/
+    
+    .fotos {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 60px repeat(6, 200px) 250px;
+        grid-template-areas:"titulo"
+                            "foto1"
+                            "foto2"
+                            "foto3"
+                            "foto4"
+                            "foto5"
+                            "foto6"
+                            "video";
+        row-gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    .imagenes {
+        grid-area: titulo;
+        color: yellow;
+        text-align: center;
+        font-size: 40px;
+    
+    }
+    
+    .foto3 {
+        grid-area: foto1;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;
         
-        .foto2 {
-            grid-area: foto2;
-            vertical-align: middle;
-            width: 80%;
-            height: 230px;
-            border-radius: 20%;
-            border-color: black;
-            margin: 10px 30px;
-        }
+    }
+    
+    .foto4 {
+        grid-area: foto2;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;
         
-        .tyler {
-            grid-area: tyler;
-            text-align: center;
-            color: yellow;
-            
-        }
+    }
+    
+    .foto5 {
+        grid-area: foto3;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;
         
-        .josh {
-            grid-area: josh;
-            text-align: center;
-            color: yellow;
-            
-        }
+    }
+    
+    .foto6 {
+        grid-area: foto4;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;
         
-        /*--Fotos--*/
+    }
+    
+    .foto7 {
+        grid-area: foto5;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;
+    }
+    
+    .foto8 {
+        grid-area: foto6;
+        vertical-align: middle;
+        width: 100%;
+        height: 95%;
         
-        .fotos {
-            display: grid;
-            grid-template-columns: 300px;
-            grid-template-rows: 60px repeat(6, 200px) 250px;
-            grid-template-areas:"titulo"
-                                "foto1"
-                                "foto2"
-                                "foto3"
-                                "foto4"
-                                "foto5"
-                                "foto6"
-                                "video";
-            row-gap: 10px;
-            justify-content: center;
-            margin-top: 20px;
-            width: 100%;
-        }
+    }
+    
+    #animacionfoto {
+        transition: transform 0.5s, box-shadow: 05.s, filter 0.5s;
+    }
+    
+    #animacionfoto:hover {
+    
+        transform: scale(1.2);
+        box-shadow: 2px 1px 5px black;
+    }
+    
+    .video {
+        grid-area: video;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+    }
+    
+    /*--Discografia --*/
+    
+    
+    .discografia {
+        width: 100%;
+    }
+    
+    .discos {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 40px repeat (5,100px);
+        grid-template-areas: "titulo"
+                            "discos";
+        grid-row-gap: 50px; 
+        margin: auto;
+        margin-top: 50px;
+        justify-content: center;
+    }
+    
+    .cd {
+        color: yellow;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .animaciondisco {
+        transition: transform 0.5s, box-shadow: 05.s, filter 0.5s;
+    }
+    
+    .discografia img {
+        width: 100%;
+        margin: 0 10px;
+    }
+    
+    .animaciondisco:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 1px 5px black;
+    }
+    
+    h3 {
+        text-align: center;
+        margin: 10px;
+        font-size: 30px;
         
-        .imagenes {
-            grid-area: titulo;
-            color: yellow;
-            text-align: center;
-            font-size: 40px;
-        
-        }
-        
-        .foto3 {
-            grid-area: foto1;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;
-            
-        }
-        
-        .foto4 {
-            grid-area: foto2;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;
-            
-        }
-        
-        .foto5 {
-            grid-area: foto3;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;
-            
-        }
-        
-        .foto6 {
-            grid-area: foto4;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;
-            
-        }
-        
-        .foto7 {
-            grid-area: foto5;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;
-        }
-        
-        .foto8 {
-            grid-area: foto6;
-            vertical-align: middle;
-            width: 100%;
-            height: 95%;
-            
-        }
-        
-        #animacionfoto {
-            transition: transform 0.5s, box-shadow: 05.s, filter 0.5s;
-        }
-        
-        #animacionfoto:hover {
-        
-            transform: scale(1.2);
-            box-shadow: 2px 1px 5px black;
-        }
-        
-        .video {
-            grid-area: video;
-            vertical-align: middle;
-            width: 100%;
-            height: 100%;
-        }
-        
-        /*--Discografia --*/
-        
-        
-        .discografia {
-            width: 100%;
-        }
-        
-        .discos {
-            display: grid;
-            grid-template-columns: 300px;
-            grid-template-rows: 40px repeat (5,100px);
-            grid-template-areas: "titulo"
-                                "discos";
-            grid-row-gap: 50px; 
-            margin: auto;
-            margin-top: 50px;
-            justify-content: center;
-        }
-        
-        .cd {
-            color: yellow;
-            margin-top: 50px;
-            text-align: center;
-            font-size: 40px;
-        }
-        
-        .animaciondisco {
-            transition: transform 0.5s, box-shadow: 05.s, filter 0.5s;
-        }
-        
-        .discografia img {
-            width: 100%;
-            margin: 0 10px;
-        }
-        
-        .animaciondisco:hover {
-            transform: scale(1.1);
-            box-shadow: 2px 1px 5px black;
-        }
-        
-        h3 {
-            text-align: center;
-            margin: 10px;
-            font-size: 30px;
-            
-        }
-        .discografia h3 {
-            color: yellow;
-        }
-        
-        
-        /*--Show--*/
-        
-        .shows {
-            color: yellow;
-            display: grid;
-            grid-template-columns: repeat(2, 160px);
-            grid-template-rows: 40px 500px;
-            grid-template-areas: "titulo titulo"
-                                "fecha lugar";
-            justify-content: center;
-            margin: auto;
-            margin-top: 50px;
-        }
-        
-        .tituloshows {
-            grid-area: titulo;
-            text-align: center;
-            font-size: 40px;
-        }
-        
-        .fecha {
-            grid-area: fecha;
-        }
-        
-        .shows .fecha li {
-            margin: 23px 0px;
-            padding-left: 20px;
-            font-size: 17px;
-        }
-        .lugar {
-            grid-area: lugar;
-        }
-        
-        .shows .lugar li {
-            margin: 23px 0;
-            font-size: 16px;
-        }
-        
-        /*--- Footer ---*/
+    }
+    .discografia h3 {
+        color: yellow;
+    }
+    
+    
+    /*--Show--*/
+    
+    .shows {
+        color: yellow;
+        display: grid;
+        grid-template-columns: repeat(2, 160px);
+        grid-template-rows: 40px 500px;
+        grid-template-areas: "titulo titulo"
+                            "fecha lugar";
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    .tituloshows {
+        grid-area: titulo;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .fecha {
+        grid-area: fecha;
+    }
+    
+    .shows .fecha li {
+        margin: 23px 0px;
+        padding-left: 20px;
+        font-size: 17px;
+    }
+    .lugar {
+        grid-area: lugar;
+    }
+    
+    .shows .lugar li {
+        margin: 23px 0;
+        font-size: 16px;
+    }
+    
+    /*--- Footer ---*/
 
-        .contenedor {
-            background: yellow;
-            width: 100%;
-            height:40px;
-            display: flex;
-            justify-content: space-between;
-        }
+    .contenedor {
+        background: yellow;
+        width: 100%;
+        height:40px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-        .contenedor nav {
+    .contenedor nav {
 
-            width: 100%;
-        }
+        width: 100%;
+    }
 
-        .contenedor nav ul li {
-            width: 5%;
-            display: inline-block;
-            margin: 10px 10px;
-            float: right;
-        }
+    .contenedor nav ul li {
+        width: 5%;
+        display: inline-block;
+        margin: 10px 10px;
+        float: right;
+    }
 
-        h4 {
-            display: inline-block;
-            margin: 15px 0;
-            font-size: 20px;
-        }
+    h4 {
+        display: inline-block;
+        margin: 15px 0;
+        font-size: 20px;
+    }
 
-        .redes {
-            width: 100%;
-        }
+    .redes {
+        width: 100%;
+    }
 
-        .contenedor nav ul .cc {
-        width: 10px;
-        margin-left: 10px;
-        }
+    .contenedor nav ul .cc {
+    width: 10px;
+    margin-left: 10px;
+    }
 }
